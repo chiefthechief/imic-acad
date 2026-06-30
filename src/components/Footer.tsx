@@ -1,22 +1,22 @@
 const schoolLinks = [
-  { label: "About IMIC", href: "#about" },
-  { label: "Campus Life", href: "#campus-life" },
-  { label: "News & Events", href: "#news" },
-  { label: "Contact Us", href: "#contact" },
+  { label: "About IMIC", href: "/about" },
+  { label: "Campus Life", href: "/campus-life" },
+  { label: "News & Events", href: "/news" },
+  { label: "Contact Us", href: "/contact" },
 ];
 
 const academicsLinks = [
-  { label: "German Abitur", href: "#academics" },
-  { label: "Cambridge IGCSE", href: "#academics" },
-  { label: "MINT / STEM", href: "#academics" },
-  { label: "DSD Certification", href: "#academics" },
+  { label: "German Abitur", href: "/academics" },
+  { label: "Cambridge IGCSE", href: "/academics" },
+  { label: "MINT / STEM", href: "/academics" },
+  { label: "DSD Certification", href: "/academics" },
 ];
 
 const familiesLinks = [
-  { label: "Admissions", href: "#admissions" },
-  { label: "Apply Online", href: "#contact" },
-  { label: "Open Days", href: "#admissions" },
-  { label: "Prospectus", href: "#" },
+  { label: "Admissions", href: "/admissions" },
+  { label: "Apply Online", href: "/contact" },
+  { label: "Open Days", href: "/admissions" },
+  { label: "Prospectus", href: "/about" },
 ];
 
 export default function Footer() {

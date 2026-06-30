@@ -4,12 +4,12 @@ import { useState } from "react";
 import { ChevronRight, Menu, X } from "lucide-react";
 
 const navLinks = [
-  { label: "About", href: "#about" },
-  { label: "Academics", href: "#academics" },
-  { label: "Campus Life", href: "#campus-life" },
-  { label: "Admissions", href: "#admissions" },
-  { label: "News", href: "#news" },
-  { label: "Contact", href: "#contact" },
+  { label: "About", href: "/about" },
+  { label: "Academics", href: "/academics" },
+  { label: "Campus Life", href: "/campus-life" },
+  { label: "Admissions", href: "/admissions" },
+  { label: "News", href: "/news" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Header() {
@@ -43,7 +43,7 @@ export default function Header() {
 
         {/* CTA */}
         <div className="hidden lg:block">
-          <a href="#admissions" className="btn-primary text-xs tracking-widest uppercase">
+          <a href="/admissions" className="btn-primary text-xs tracking-widest uppercase">
             Apply Now
             <ChevronRight className="h-4 w-4" />
           </a>
@@ -75,7 +75,7 @@ export default function Header() {
               </a>
             ))}
             <a
-              href="#admissions"
+              href="/admissions"
               className="btn-primary mt-2 w-fit text-xs tracking-widest uppercase"
               onClick={() => setMobileOpen(false)}
             >

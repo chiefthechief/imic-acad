@@ -2,7 +2,7 @@ import { ArrowRight, ChevronDown } from "lucide-react";
 
 function FlagDE() {
   return (
-    <span className="inline-flex h-3 w-5 overflow-hidden rounded-sm border border-white/20">
+    <span className="inline-flex h-4 w-6 overflow-hidden bg-white sm:h-5 sm:w-7">
       <span className="h-full w-1/3 bg-black" />
       <span className="h-full w-1/3 bg-red-600" />
       <span className="h-full w-1/3 bg-yellow-400" />
@@ -12,10 +12,17 @@ function FlagDE() {
 
 function FlagGH() {
   return (
-    <span className="inline-flex h-3 w-5 flex-col overflow-hidden rounded-sm border border-white/20">
-      <span className="h-2/5 bg-red-600" />
-      <span className="h-1/5 bg-yellow-400" />
-      <span className="h-2/5 bg-green-600" />
+    <span className="relative inline-flex h-4 w-6 overflow-hidden bg-white sm:h-5 sm:w-7">
+      <span className="absolute inset-0 flex flex-col">
+        <span className="h-1/3 bg-red-600" />
+        <span className="h-1/3 bg-yellow-400" />
+        <span className="h-1/3 bg-green-600" />
+      </span>
+      <span className="absolute inset-0 flex items-center justify-center">
+        <svg viewBox="0 0 24 24" className="h-3 w-3 text-black sm:h-3.5 sm:w-3.5" fill="currentColor" aria-hidden="true">
+          <path d="M12 2 14.3 7.1 20 7.5 15.5 11.2 17.1 16.7 12 13.7 6.9 16.7 8.5 11.2 4 7.5 9.7 7.1 12 2Z" />
+        </svg>
+      </span>
     </span>
   );
 }

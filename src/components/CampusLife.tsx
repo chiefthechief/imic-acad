@@ -35,7 +35,7 @@ const collageImages = [
     aspect: "aspect-[4/3]",
   },
   {
-    src: "https://images.unsplash.com/photo-1503676260728-1c00da280a25?w=600&q=80",
+    src: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&q=80",
     alt: "Students participating in campus life activities",
     className: "col-span-1 row-span-1 md:col-span-2",
     aspect: "aspect-[16/7]",
