@@ -9,6 +9,7 @@ import Testimonials from "@/components/Testimonials";
 import NewsEvents from "@/components/NewsEvents";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import RevealOnScroll from "@/components/RevealOnScroll";
 
 export default function Home() {
   return (
@@ -16,14 +17,30 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <OurStory />
-        <AcademicProgrammes />
-        <StatsBanner />
-        <CampusLife />
-        <Admissions />
-        <Testimonials />
-        <NewsEvents />
-        <Contact />
+        <RevealOnScroll>
+          <OurStory />
+        </RevealOnScroll>
+        <RevealOnScroll delay={100}>
+          <AcademicProgrammes />
+        </RevealOnScroll>
+        <RevealOnScroll delay={150}>
+          <StatsBanner />
+        </RevealOnScroll>
+        <RevealOnScroll delay={200}>
+          <CampusLife />
+        </RevealOnScroll>
+        <RevealOnScroll delay={250}>
+          <Admissions />
+        </RevealOnScroll>
+        <RevealOnScroll delay={300}>
+          <Testimonials />
+        </RevealOnScroll>
+        <RevealOnScroll delay={350}>
+          <NewsEvents />
+        </RevealOnScroll>
+        <RevealOnScroll delay={400}>
+          <Contact />
+        </RevealOnScroll>
       </main>
       <Footer />
     </>

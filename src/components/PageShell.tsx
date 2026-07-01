@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import RevealOnScroll from "@/components/RevealOnScroll";
 
 type PageShellProps = {
   title: string;
@@ -26,7 +27,9 @@ export default function PageShell({ title, intro, children }: PageShellProps) {
             </p>
           </div>
         </section>
-        <div className="container-wide py-16 md:py-20">{children}</div>
+        <div className="container-wide py-16 md:py-20">
+          <RevealOnScroll>{children}</RevealOnScroll>
+        </div>
       </main>
       <Footer />
     </>
