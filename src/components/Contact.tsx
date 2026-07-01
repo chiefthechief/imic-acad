@@ -13,9 +13,9 @@ export default function Contact() {
               We Would Love to Hear From You
             </h2>
             <p className="mt-5 text-base leading-relaxed text-slate-dark/75">
-              Whether you are exploring IMIC for the first time or ready to begin
-              your application, our admissions team is here to help. Reach out and
-              we will respond within two working days.
+              Whether you are exploring IMIC for the first time or ready to
+              begin your application, our admissions team is here to help. Reach
+              out and we will respond within two working days.
             </p>
 
             <ul className="mt-10 space-y-6">
@@ -27,9 +27,7 @@ export default function Contact() {
                   <div className="text-xs font-semibold tracking-wider text-slate-dark/50 uppercase">
                     Address
                   </div>
-                  <div className="mt-1 text-sm text-navy">
-                    14 Academy Drive, East Legon, Accra
-                  </div>
+                  <div className="mt-1 text-sm text-navy">KOTОВАВІ, АCCRA,</div>
                 </div>
               </li>
               <li className="flex items-start gap-4">
@@ -41,10 +39,10 @@ export default function Contact() {
                     Telephone
                   </div>
                   <a
-                    href="tel:+233302123456"
+                    href="tel:+233591320653"
                     className="mt-1 block text-sm text-navy hover:text-crimson"
                   >
-                    +233 (0) 302 123 456
+                    +233 59 132 0653
                   </a>
                 </div>
               </li>
@@ -57,10 +55,10 @@ export default function Contact() {
                     Email
                   </div>
                   <a
-                    href="mailto:admissions@imic.edu.gh"
+                    href="mailto:imicinternationalacademy@gmail.com"
                     className="mt-1 block text-sm text-navy hover:text-crimson"
                   >
-                    admissions@imic.edu.gh
+                    imicinternationalacademy@gmail.com
                   </a>
                 </div>
               </li>
@@ -70,7 +68,10 @@ export default function Contact() {
           {/* Right column — Form */}
           <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
             <div>
-              <label htmlFor="fullName" className="mb-1.5 block text-xs font-semibold tracking-wider text-slate-dark/60 uppercase">
+              <label
+                htmlFor="fullName"
+                className="mb-1.5 block text-xs font-semibold tracking-wider text-slate-dark/60 uppercase"
+              >
                 Full Name
               </label>
               <input
@@ -81,7 +82,10 @@ export default function Contact() {
               />
             </div>
             <div>
-              <label htmlFor="email" className="mb-1.5 block text-xs font-semibold tracking-wider text-slate-dark/60 uppercase">
+              <label
+                htmlFor="email"
+                className="mb-1.5 block text-xs font-semibold tracking-wider text-slate-dark/60 uppercase"
+              >
                 Email Address
               </label>
               <input
@@ -92,7 +96,10 @@ export default function Contact() {
               />
             </div>
             <div>
-              <label htmlFor="enquiryType" className="mb-1.5 block text-xs font-semibold tracking-wider text-slate-dark/60 uppercase">
+              <label
+                htmlFor="enquiryType"
+                className="mb-1.5 block text-xs font-semibold tracking-wider text-slate-dark/60 uppercase"
+              >
                 Enquiry Type
               </label>
               <select
@@ -110,7 +117,10 @@ export default function Contact() {
               </select>
             </div>
             <div>
-              <label htmlFor="message" className="mb-1.5 block text-xs font-semibold tracking-wider text-slate-dark/60 uppercase">
+              <label
+                htmlFor="message"
+                className="mb-1.5 block text-xs font-semibold tracking-wider text-slate-dark/60 uppercase"
+              >
                 Message
               </label>
               <textarea

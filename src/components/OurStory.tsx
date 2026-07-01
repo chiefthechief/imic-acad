@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 
 const stats = [
@@ -16,13 +15,10 @@ export default function OurStory() {
           {/* Image with floating stats */}
           <div className="relative">
             <div className="relative aspect-[4/5] overflow-hidden rounded-sm shadow-xl">
-              <Image
-                src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&q=80"
+              <img
+                src="https://images.pexels.com/photos/8199151/pexels-photo-8199151.jpeg"
                 alt="Students learning in a modern classroom at IMIC International Academy"
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                priority
+                className="h-full w-full object-cover"
               />
             </div>
 
@@ -36,11 +32,16 @@ export default function OurStory() {
                   {stats.map((item) => (
                     <div key={item} className="flex items-start gap-2">
                       <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-mustard" />
-                      <span className="text-xs leading-snug text-white/85">{item}</span>
+                      <span className="text-xs leading-snug text-white/85">
+                        {item}
+                      </span>
                     </div>
                   ))}
                 </div>
-                <a href="#" className="link-arrow mt-5 text-white hover:text-mustard">
+                <a
+                  href="#"
+                  className="link-arrow mt-5 text-white hover:text-mustard"
+                >
                   View our full prospectus
                   <ArrowRight className="h-4 w-4" />
                 </a>
@@ -65,8 +66,8 @@ export default function OurStory() {
                 Our bilingual education — delivered in English and German —
                 combines the analytical rigour of the German school system with
                 the warmth and community spirit that defines Ghanaian culture.
-                From our youngest learners to our Abitur graduates, every student
-                is prepared for a future without borders.
+                From our youngest learners to our Abitur graduates, every
+                student is prepared for a future without borders.
               </p>
             </div>
           </div>

@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const tags = [
   "Deutsch AG",
   "Model UN",
@@ -17,25 +15,25 @@ const tags = [
 
 const collageImages = [
   {
-    src: "https://images.unsplash.com/photo-1517649763962-0c623066013b?w=600&q=80",
+    src: "https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1600&q=90",
     alt: "Students collaborating on campus projects",
     className: "col-span-1 row-span-2",
     aspect: "aspect-[3/4]",
   },
   {
-    src: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=600&q=80",
+    src: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=1600&q=90",
     alt: "Students enjoying outdoor activities",
     className: "col-span-1",
     aspect: "aspect-[4/3]",
   },
   {
-    src: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&q=80",
+    src: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1600&q=90",
     alt: "Classroom learning and discussions",
     className: "col-span-1",
     aspect: "aspect-[4/3]",
   },
   {
-    src: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&q=80",
+    src: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1600&q=90",
     alt: "Students participating in campus life activities",
     className: "col-span-1 row-span-1 md:col-span-2",
     aspect: "aspect-[16/7]",
@@ -52,9 +50,10 @@ export default function CampusLife() {
           </h2>
           <p className="mt-5 text-base leading-relaxed text-slate-dark/75">
             Life at IMIC extends far beyond the classroom. From competitive
-            sports and performing arts to Model UN and our celebrated Robotik-Club,
-            students discover passions, forge lifelong friendships, and develop
-            the leadership skills that define tomorrow&apos;s global citizens.
+            sports and performing arts to Model UN and our celebrated
+            Robotik-Club, students discover passions, forge lifelong
+            friendships, and develop the leadership skills that define
+            tomorrow&apos;s global citizens.
           </p>
         </div>
 
@@ -65,12 +64,10 @@ export default function CampusLife() {
               key={img.src}
               className={`relative overflow-hidden rounded-sm ${img.className} ${img.aspect}`}
             >
-              <Image
+              <img
                 src={img.src}
                 alt={img.alt}
-                fill
-                className="object-cover transition-transform duration-500 hover:scale-105"
-                sizes="(max-width: 768px) 50vw, 33vw"
+                className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
               />
             </div>
           ))}

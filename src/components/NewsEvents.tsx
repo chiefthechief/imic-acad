@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 
 interface NewsItem {
@@ -11,7 +10,8 @@ interface NewsItem {
 
 const newsItems: NewsItem[] = [
   {
-    image: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=600&q=80",
+    image:
+      "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1600&q=90",
     category: "Academic Achievement",
     date: "12 Jun 2025",
     headline: "IMIC Students Awarded Top DSD II Results",
@@ -19,7 +19,8 @@ const newsItems: NewsItem[] = [
       "Twelve Year 12 students achieved the highest grade in the Deutsches Sprachdiplom Stufe II examination, opening direct pathways to German universities.",
   },
   {
-    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&q=80",
+    image:
+      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=90",
     category: "Admissions",
     date: "1 Jun 2025",
     headline: "2025/26 Admissions Open",
@@ -27,7 +28,8 @@ const newsItems: NewsItem[] = [
       "Applications for the 2025/26 academic year are now being accepted. Early application deadline: 31 August 2025. Book your campus tour today.",
   },
   {
-    image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&q=80",
+    image:
+      "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1600&q=90",
     category: "International",
     date: "20 May 2025",
     headline: "Bavarian Partner School Delegation Visits",
@@ -54,12 +56,10 @@ export default function NewsEvents() {
           {newsItems.map((item) => (
             <article key={item.headline} className="group flex flex-col">
               <div className="relative aspect-[16/10] overflow-hidden rounded-sm">
-                <Image
+                <img
                   src={item.image}
                   alt={item.headline}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
               <div className="mt-4 flex items-center gap-3">
